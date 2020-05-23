@@ -23,17 +23,18 @@ function Install-Packages {
         $InstallAllPackages
     )
 
-    $scriptDir =  Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
-    $schemaFile = Join-Path $scriptDir "schema.json" 
+    $schemaFile =  Join-Path $PSScriptRoot "schema.json"
 
     # Validate Module parameters
     Test-Parameters $Packages $InstallAllPackages $ConfigFile
 
     #Check for valid json configuration
-    Test-Json -Json (Get-Content -Path $ConfigFile -Raw) -Schema (Get-Content -Path $schemaFile -Raw) -ErrorAction Stop
+    $configAsString = Get-Content -Path $ConfigFile -Raw
+    $schemaAsString = Get-Content -Path $schemaFile  -Raw
+
+    Test-Json -Json $configAsString -Schema $schemaAsString -ErrorAction Stop
 
     #Read configuration file
-    $configAsString = Get-Content -Path $ConfigFile -Raw
     $config = ConvertFrom-Json $configAsString
 
     $packageDefinitions = $config.packages 

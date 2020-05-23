@@ -61,5 +61,5 @@ Install-Packages -ConfigFile .\winget-config.json -InstallAllPackages
 
 Option 2 is to select the packages by name:
 ``` PowerShell
-Install-Packages -ConfigFile .\winget-config.json -Packages "Development"
+Install-Packages -ConfigFile .\winget-config.json -Packages "General"
 ```
