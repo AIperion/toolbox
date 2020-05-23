@@ -1,0 +1,58 @@
+{
+    "definitions": {
+        "application": {
+            "type": "object",
+            "description": "Defines an application.",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "package": {
+            "type": "object",
+            "description": "Describes a package of application for install.",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "applications": {
+                    "type": "array",
+                    "items": {
+                        "allOf": [
+                            {
+                                "$ref": "#/definitions/application"
+                            }
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "name",
+                "applications"
+            ]
+        }
+    },
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://hofmann.pm/package-manager/v1/schema.json",
+    "title": "Package-Configuraiton",
+    "type": "object",
+    "properties": {
+        "packages": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "#/definitions/package"
+                    }
+                ]
+            }
+        }
+    }
+}

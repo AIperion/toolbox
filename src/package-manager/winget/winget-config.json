@@ -1,0 +1,84 @@
+{
+    "$schema": "./schema.json",
+    "packages": [
+        {
+            "name": "General",
+            "applications": [
+                {
+                    "id": "7zip.7zip"
+                },
+                {
+                    "id": "DominikReichl.KeePass"
+                },
+                {
+                    "id": "calibre.calibre"
+                },
+                {
+                    "id": "GIMP.GIMP"
+                },
+                {
+                    "id": "Microsoft.Edge"
+                },
+                {
+                    "id": "Mozilla.Firefox"
+                },
+                {
+                    "id": "Videolan.Vlc"
+                },
+                {
+                    "id": " Spotify.Spotify"
+                },
+                {
+                    "id": "Microsoft.PowerToys"
+                },
+                {
+                    "id": "Microsoft.Skype"
+                },
+                {
+                    "id": "Microsoft.Teams"
+                },
+                {
+                    "id": "Telegram.TelegramDesktop"
+                },
+                {
+                    "id": "Notepad++.Notepad++"
+                },
+                {
+                    "id": "Microsoft.Powershell"
+                }
+            ]
+        },
+        {
+            "name": "Development",
+            "applications": [
+                {
+                    "id": "Git.Git"
+                },
+                {
+                    "id": "Microsoft.VisualStudio.Enterprise"
+                },
+                {
+                    "id": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "id": "OpenJS.Nodejs"
+                },
+                {
+                    "id": "Postman.Postman"
+                },
+                {
+                    "id": "Yarn.Yarn"
+                },
+                {
+                    "id": "ScooterSoftware.BeyondCompare4"
+                },
+                {
+                    "id": "Microsoft.dotnet"
+                },
+                {
+                    "id": "Microsoft.PowerBI"
+                }
+            ]
+        }
+    ]
+}
