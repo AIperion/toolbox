@@ -23,11 +23,14 @@ function Install-Packages {
         $InstallAllPackages
     )
 
+    $scriptDir =  Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
+    $schemaFile = Join-Path $scriptDir "schema.json" 
+
     # Validate Module parameters
     Test-Parameters $Packages $InstallAllPackages $ConfigFile
 
     #Check for valid json configuration
-    Test-Json -Json (Get-Content -Path $ConfigFile -Raw) -Schema (Get-Content -Path "schema.json" -Raw)
+    Test-Json -Json (Get-Content -Path $ConfigFile -Raw) -Schema (Get-Content -Path $schemaFile -Raw) -ErrorAction Stop
 
     #Read configuration file
     $configAsString = Get-Content -Path $ConfigFile -Raw
@@ -37,7 +40,7 @@ function Install-Packages {
 
     foreach ($definition in $packageDefinitions) {
         
-        if((-not $InstallAllPackages) -and (-not $Packages -contains $definition.name)){
+        if((-not $InstallAllPackages) -and !($Packages -contains $definition.name)){
             continue;
         }
         

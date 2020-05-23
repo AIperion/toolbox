@@ -1,4 +1,9 @@
-Remove-Module -Name Install-Packages
-Import-Module .\Install-Packages.psm1
+$scriptDir =  Split-Path -Path $MyInvocation.MyCommand.Definition -Parent
+$modulePath = Join-Path $scriptDir "Install-Packages.psm1"
+$configFilePath = Join-Path $scriptDir "winget-config.json"
 
-Install-Packages -ConfigFile .\winget-config.json -InstallAllPackages
+Remove-Module -Name Install-Packages -ErrorAction SilentlyContinue
+Import-Module $modulePath
+
+#Install-Packages -ConfigFile $configFilePath -InstallAllPackages
+Install-Packages -ConfigFile $configFilePath -Packages "Development"
