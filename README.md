@@ -5,7 +5,7 @@ Contains some helpful scripts and tools
 This small PowerShell module allows to define app packages as json configuration for installation via winget.
 
 ### Confguration
-The configuration schema is able to define multiple packages and each package combines apps for later installation via the PowerShell module.
+The configuration schema is able to define multiple packages and each package combines multiple apps for installation via the PowerShell module.
 
 ``` JSON
 {

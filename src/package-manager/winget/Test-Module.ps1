@@ -6,4 +6,4 @@ Remove-Module -Name Install-Packages -ErrorAction SilentlyContinue
 Import-Module $modulePath
 
 #Install-Packages -ConfigFile $configFilePath -InstallAllPackages
-Install-Packages -ConfigFile $configFilePath -Packages "Development"
+Install-Packages -ConfigFile $configFilePath -Packages "General"
