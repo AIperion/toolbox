@@ -42,7 +42,7 @@ The configuration schema is able to define multiple packages and each package co
     ]
 }
 ```
-Full example can be find in the [winget-config.json](./src/package-manager/winget/winget-config.json) file.
+Full example can be find in the [winget-config.json](./src/package-manager/winget/winget-config.json) file and a json schema defintion is can be found in the [schema.json](src/package-manager/winget/schema.json) file.
 
 ### Install Module
 Module can be installed like every other PowerShell module:
