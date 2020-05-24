@@ -5,7 +5,7 @@ Contains some helpful scripts and tools
 This small PowerShell module allows to define app packages as json configuration for installation via winget.
 
 ### Confguration
-The configuration schema defines multiple packahes and each package combines apps for later installation via the PowerShell module.
+The configuration schema is able to define multiple packages and each package combines apps for later installation via the PowerShell module.
 
 ``` JSON
 {
@@ -42,7 +42,7 @@ The configuration schema defines multiple packahes and each package combines app
     ]
 }
 ```
-Full example can be find in th e[winget-config.json](./src/package-manager/winget/winget-config.json) file.
+Full example can be find in the [winget-config.json](./src/package-manager/winget/winget-config.json) file.
 
 ### Install Module
 Module can be installed like every other PowerShell module:
