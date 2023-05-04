@@ -47,12 +47,12 @@ function Install-Packages {
         
         foreach ($app in $definition.applications) {
             
-            $parameters = " --id $($app.id) -e -h"
+            $parameters = "--id $($app.id) -e --force --silent"
             if($app.version){
                 $parameters = "$parameters -v $($app.version)"
             }
-            
-            & winget "install" $parameters.Split(" ")  
+            Write-Host "Install package $($app.id) with parameters '$($parameters)'"
+            & winget "install" $parameters.Split(" ")
         }   
     }
 }

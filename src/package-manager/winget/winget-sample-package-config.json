@@ -1,0 +1,115 @@
+{
+    "$schema": "./schema.json",
+    "packages": [
+        {
+            "name": "General",
+            "applications": [
+                {
+                    "id": "7zip.7zip"
+                },
+                {
+                    "id": "KeePassXCTeam.KeePassXC"
+                },
+                {
+                    "id": "Mozilla.Firefox"
+                },
+                {
+                    "id": "Videolan.Vlc"
+                },
+                {
+                    "id": "Microsoft.PowerToys"
+                },
+                {
+                    "id": "Microsoft.Teams"
+                },
+                {
+                    "id": "Notepad++.Notepad++"
+                },
+                {
+                    "id": "Microsoft.Powershell"
+                },
+                {
+                    "id": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "id": "JGraph.Draw"
+                },
+                {
+                    "id": "DeepL.DeepL"
+                },
+                {
+                    "id": "Governikus.AusweisApp2"
+                }
+            ]
+        },
+        {
+            "name": "Multimedia",
+            "applications": [
+                {
+                    "id": "Spotify.Spotify"
+                }
+            ]
+        },
+        {
+            "name": "Development",
+            "applications": [
+                {
+                    "id": "Git.Git"
+                },
+                {
+                    "id": "PuTTY.PuTTY"
+                },
+                {
+                    "id": "OpenJS.NodeJS.LTS"
+                },
+                {
+                    "id": "Postman.Postman"
+                },
+                {
+                    "id": "ScooterSoftware.BeyondCompare4"
+                },
+                {
+                    "id": "Docker.DockerDesktop"
+                },
+                {
+                    "id": "Mirantis.Lens"
+                },
+                {
+                    "id": "Fork.Fork"
+                },
+                {
+                    "id": "GoLang.Go.1.19"
+                },
+                {
+                    "id": "Microsoft.dotnet"
+                },
+                {
+                    "id": "Microsoft.Bicep"
+                },
+                {
+                    "id": "Microsoft.AzureCLI"
+                },
+                {
+                    "id": "Microsoft.AzureStorageExplorer"
+                },
+                {
+                    "id": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "id": "Microsoft.VisualStudio.2022.Enterprise"
+                }
+            ]
+        },
+        {
+            "name": "ExtDev",
+            "applications": [
+                {
+                    "id": " Microsoft.AzureDataStudio"
+                },
+                {
+                    "id": "PostgreSQL.pgAdmin"
+                }
+            ]
+        }
+    ]
+}

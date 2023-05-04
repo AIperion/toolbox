@@ -1,10 +1,8 @@
-# toolbox
-Contains some helpful scripts and tools
+# Winget Packages
+This small PowerShell module provides a tooling to install applications via winget as predfined packages. 
+The packages are define as a simple JSON configuration file like the example in the configuration section. 
 
-## Winget Packages
-This small PowerShell module allows to define app packages as json configuration for installation via winget.
-
-### Confguration
+## Confguration
 The configuration schema is able to define multiple packages and each package combines multiple apps for installation via the PowerShell module.
 
 ``` JSON
@@ -44,13 +42,13 @@ The configuration schema is able to define multiple packages and each package co
 ```
 Full example can be find in the [winget-config.json](./src/package-manager/winget/winget-config.json) file and a json schema defintion is can be found in the [schema.json](src/package-manager/winget/schema.json) file.
 
-### Install Module
+## Install Module
 Module can be installed like every other PowerShell module:
 ``` PowerShell
 Import-Module ./Install-Packages.psm1
 ```
 
-### Use Module
+## Use Module
 
 There are two options to install the packages from the config.
 
